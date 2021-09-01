@@ -1,12 +1,16 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 
-app.get('/',(req,res)=>{
-    res.send("hello")
-})
+app.get("/", (req, res) => {
+  res.send("hello");
+});
 
-app.get('/world', (req,res)=>{
-    res.send('world')
-})
+app.get("/world", (req, res) => {
+  res.send("hello world");
+});
 
-app.listen(3000)
+app.get("/tik", (req, res) => {
+  res.send("tok");
+});
+
+app.listen(3000);
